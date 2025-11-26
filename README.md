@@ -1,6 +1,6 @@
 # ZKPRIME SDK — Technical Reference
 
-![ZKPRIME banner](public/banner.png)
+![ZKPRIME banner](public/banner.jpg)
 
 This repository contains the ZKPRIME TypeScript SDK: a client-side library exposing primitives and opinionated helpers for building privacy-first applications on Solana. This README is written for ultra-technical developers who will integrate the SDK into backend services, web clients, or on-chain program tooling.
 
