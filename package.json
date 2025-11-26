@@ -1,0 +1,47 @@
+{
+  "name": "@zkprime/sdk",
+  "version": "0.1.0",
+  "description": "ZKPRIME.DEV — Client SDK (TypeScript) for Private State + Confidential Compute on Solana",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "clean": "rimraf dist",
+    "test": "vitest",
+    "lint": "eslint \"src/**/*.{ts,tsx}\"",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "zk",
+    "solana",
+    "privacy",
+    "sdk",
+    "zkprime"
+  ],
+  "author": "ZKPRIME.DEV",
+  "license": "MIT",
+  "dependencies": {
+    "@solana/web3.js": "^1.80.0",
+    "bs58": "^5.0.0",
+    "tweetnacl": "^1.0.3"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0",
+    "vitest": "^0.34.0",
+    "@types/node": "^20.0.0",
+    "rimraf": "^3.0.2",
+    "eslint": "^8.0.0",
+    "prettier": "^2.8.0"
+  }
+}
